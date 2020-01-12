@@ -25,7 +25,7 @@ public class ExercisesTest {
         return inPhrases.stream().map(exercise -> DynamicTest.dynamicTest("Test exercise " + exercise.getName(), () -> {
             int idx = 0;
             for (Object input : exercise.getInputs()) {
-                assertEquals("Failed for input " +input.toString() + ".", exercise.getOutputs().get(idx), exercise.getSolution().apply(input));
+                assertEquals("Failed for " + exercise.getName() + " input " +input.toString() + ".", exercise.getOutputs().get(idx), exercise.getSolution().apply(input));
                 idx++;
             }
         }));

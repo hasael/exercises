@@ -98,7 +98,13 @@ public class ExercisesDictionary {
                     Arrays.asList(new int[]{7, 1, 3, 2, 4, 5, 6}, new int[]{4, 3, 1, 2}, new int[]{2, 3, 4, 1, 5},
                             new int[]{1, 3, 5, 2, 4, 6, 7}),
                     Arrays.asList(5, 3, 3, 3),
-                    x -> new Minimum_Swaps().solution(x))
+                    x -> new Minimum_Swaps().solution(x)),
+                    new Exercise(
+                        "Game of bits",
+                        "",
+                        Arrays.asList(11),
+                        Arrays.asList('Y'),
+                        x -> new Game_of_Bits().solution(x))
 
     );
 }
